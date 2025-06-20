@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: 
+**URL**: https://syd.app.br/
 
 ## What technologies are used for this project?
 
