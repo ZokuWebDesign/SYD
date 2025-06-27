@@ -93,7 +93,7 @@ const Pricing = () => {
 
               {/* Button */}
               <Button className="w-full p-0 bg-secondary hover:bg-secondary/90 rounded-2xl h-auto">
-                <a href="" className="w-full py-3 px-6 text-lg text-center text-white font-medium">
+                <a href="https://syd-83174.bubbleapps.io/version-test/auth?t=login" className="w-full py-3 px-6 text-lg text-center text-white font-medium">
                   Agendar consulta
                 </a>
               </Button>
@@ -136,7 +136,7 @@ const Pricing = () => {
               {/* Button */}
               <Button className="w-full p-0 bg-secondary hover:bg-secondary/90 rounded-2xl h-auto group">
                 <a
-                  href=""
+                  href="https://api.whatsapp.com/send/?phone=5515996945695&text=gostaria%20de%20receber%20um%20orçamento"
                   className="flex items-center justify-center w-full py-3 px-6 text-lg text-white font-semibold font-[Lato] w-full"
                 >
                   Entrar em contato

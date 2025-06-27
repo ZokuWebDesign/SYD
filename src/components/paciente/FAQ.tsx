@@ -73,9 +73,14 @@ const FAQ = () => {
             Entre contato conosco! Estamos aqui para te ajudar com o que for preciso.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="flex w-full lg:w-[14rem] px-6 py-3.5 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 text-white text-xl font-[var(--body)] h-auto">
+            <Button size="lg" className="flex w-full lg:w-[14rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 text-white text-xl font-[var(--body)] h-auto">
+              <a
+                href="https://api.whatsapp.com/send/?phone=5515996945695&text=gostaria%20de%20agendar%20uma%20demonstração"
+                className="w-full px-6 py-3.5 text-white text-xl font-semibold"
+              >
                 Entrar em contato
-              </Button>
+              </a>
+            </Button>
           </div>
         </div>
       </div>

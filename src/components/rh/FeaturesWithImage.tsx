@@ -99,7 +99,7 @@ const FeaturesWithImage = () => {
             <div className="flex flex-col sm:flex-row justify-center hidden lg:block w-full gap-4 mt-12">
               <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
                 <a
-                  href=""
+                  href="https://syd-83174.bubbleapps.io/version-test/auth?t=login"
                   className="w-full px-6 py-3.5 text-white text-xl font-semibold"
                 >
                   Desbloquear vantagens
@@ -172,7 +172,7 @@ const FeaturesWithImage = () => {
           <div className="flex flex-col sm:flex-row justify-center block lg:hidden w-full gap-4">
             <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
               <a
-                href=""
+                href="https://syd-83174.bubbleapps.io/version-test/auth?t=login"
                 className="w-full px-6 py-3.5 text-white text-xl font-semibold"
               >
                 Desbloquear vantagens

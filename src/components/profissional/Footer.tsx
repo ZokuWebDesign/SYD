@@ -41,7 +41,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-2 text-secondary">
                   <Mail className="w-5 h-5" />
-                  <a href="mailto:contato@syd.com.br" className="hover:underline"><p className="text-secondary">contato@syd.com.br</p></a>
+                  <a href="mailto:suporte@sydapp.com.br" className="hover:underline"><p className="text-secondary">suporte@sydapp.com.br</p></a>
                 </div>
               </div>
               <div className="flex space-x-4">
@@ -51,7 +51,7 @@ const Footer = () => {
                 <a href="" className="hover:opacity-80 transition-opacity">
                   <img src={X} alt="X (Twitter)" className="w-5 h-5" />
                 </a>
-                <a href="" className="hover:opacity-80 transition-opacity">
+                <a href="https://www.instagram.com/syd.app/" className="hover:opacity-80 transition-opacity">
                   <img src={instagram} alt="Instagram" className="w-5 h-5" />
                 </a>
                 <a href="" className="hover:opacity-80 transition-opacity">

@@ -14,7 +14,7 @@ const CTA = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" className="flex w-full sm:w-[20.25rem] px-6 py-3.5 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
             <a
-              href=""
+              href="https://syd-83174.bubbleapps.io/version-test/auth?t=login"
               className=" text-white text-xl font-semibold"
             >
               Quero me cadastrar
