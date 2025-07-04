@@ -4,24 +4,29 @@ import sun from "@/assets/icons/sun-icon.svg";
 
 const features = [
   {
-    text: "Retenção de talentos: maior permanência e menor rotatividade",
-    iconSvg: sun
+    highlight: "Retenção de talentos:",
+    text: " maior permanência e menor rotatividade",
+    icon: sun
   },
   {
-    text: "Implantar suporte psicológico gera retorno financeiro (redução de faltas e custos médicos)",
-    iconSvg: sun
+    highlight: "Retorno financeiro",
+    text: " implantar suporte psicológico gera redução de faltas e custos médicos",
+    icon: sun
   },
   {
-    text: "Tem forte impacto no clima organizacional, satisfação, engajamento e retenção",
-    iconSvg: sun
+    highlight: "Clima organizacional fortalecido:",
+    text: " impacto direto na satisfação, engajamento e retenção da equipe",
+    icon: sun
   },
   {
-    text: "Produtividade percebida: impulso no eNPS, refletindo satisfação e engajamento",
-    iconSvg: sun
+    highlight: "Produtividade percebida:",
+    text: " impulso no eNPS, refletindo satisfação e engajamento",
+    icon: sun
   },
   {
-    text: "Atração de talentos: empresas com esse diferencial são mais atrativas no mercado de trabalho",
-    iconSvg: sun
+    highlight: "Atração de talentos:",
+    text: " empresas com esse diferencial são mais atrativas no mercado de trabalho",
+    icon: sun
   }
 ];
 
@@ -134,15 +139,16 @@ const Metricas = () => {
 
       </div>
 
-      <div className="flex flex-col gap-2 w-full lg:w-[48rem]">
-        <h4>Esses dados mostram que oferecer suporte psicológico tem impacto direto em:</h4>
+      <div className="flex flex-col gap-2 w-full lg:w-[53rem]">
+        <h3>Esses dados mostram que oferecer suporte psicológico tem impacto direto em:</h3>
         {/* List */}
         <ul className="flex flex-col gap-3 w-full">
           {features.map((feature, index) => (
             <FeatureItem
               key={index}
+              highlight={feature.highlight}
               text={feature.text}
-              iconSvg={feature.iconSvg}
+              icon={feature.icon}
             />
           ))}
         </ul>
