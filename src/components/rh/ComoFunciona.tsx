@@ -21,7 +21,7 @@ const ComoFunciona = () => {
               className="w-10 h-[74px] object-contain"
             />
           </div>
-          <h3>Cadastre seus colaboradores<br />na nossa plataforma</h3>
+          <h3>Os colaboradores se cadastram no Syd por meio de um convite enviado pelo RH, de forma simples, segura e personalizada.</h3>
         </div>
 
 
@@ -45,14 +45,16 @@ const ComoFunciona = () => {
               className="w-[55px] h-[75px] object-contain"
             />
           </div>
-          <h3>Acompanhe tudo pelo<br />painel gerencial</h3>
+          <h3>Acompanhe os minutos<br />utilizados pelo painel gerencial.</h3>
         </div>
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center w-full gap-4">
               <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
                 <a
-                  href="https://api.whatsapp.com/send/?phone=5515996945695&text=gostaria%20de%20agendar%20uma%20demonstração"
+                  href="https://api.whatsapp.com/send/?phone=5515996945695&text=gostaria%20de%20agendar%20uma%20demonstração&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full px-6 py-3.5 text-white text-xl font-semibold"
                 >
                   Agende uma demonstração

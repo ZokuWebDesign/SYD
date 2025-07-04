@@ -138,7 +138,7 @@ const Forms = () => {
                   </Button>
 
                   <p className="text-sm text-gray-500">
-                  Ao enviar este formulário, você concorda com nossos <a>Termos de Uso</a> e <a>Política de Privacidade</a>.
+                  Ao enviar este formulário, você concorda com nossos <a href="/termos" target="_blank" rel="noopener noreferrer">Termos de Uso</a> e <a href="/politica" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>.
                   </p>
                 </form>
               </div>

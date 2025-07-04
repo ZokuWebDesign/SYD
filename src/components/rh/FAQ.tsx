@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     question: "A plataforma exige algum tipo de integração com sistemas internos da empresa?",
-    answer: "Não. O SYD funciona de forma independente e pronta para uso. O cadastro dos colaboradores pode ser feito manualmente ou via planilha, sem necessidade de integração técnica."
+    answer: "Não. O SYD funciona de forma independente e pronta para uso. O RH envia convites para os colaboradores se cadastrarem na plataforma."
   },
   {
     question: "Quais métricas a empresa pode acompanhar?",
-    answer: "O RH tem acesso a dados de uso da plataforma (como número de atendimentos, horários mais frequentes, tags utilizadas nos prontuários autorizados), relatórios em PDF e indicadores de engajamento — sempre respeitando a confidencialidade individual."
+    answer: "O RH tem acesso a dados de uso da plataforma (como número de atendimentos, horários mais frequentes, tags utilizadas nos prontuários autorizados), relatórios em PDF e indicadores de engajamento. Sempre respeitando a confidencialidade individual."
   },
   {
     question: "Quanto tempo leva para começar a usar a plataforma?",
@@ -71,7 +71,9 @@ const FAQ = () => {
           <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="flex w-full lg:w-[14rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 text-white text-xl font-[var(--body)] h-auto">
                 <a
-                  href="https://api.whatsapp.com/send/?phone=5515996945695&text=gostaria%20de%20agendar%20uma%20demonstração"
+                  href="https://api.whatsapp.com/send/?phone=5515996945695&text=Tenho+dúvidas%2C+poderia+me+ajudar%3F&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full px-6 py-3.5 text-white text-xl font-semibold"
                 >
                   Entrar em contato

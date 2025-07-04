@@ -19,17 +19,17 @@ const features = [
   {
     icon: Tag,
     title: "Prontuário com tags inteligentes",
-    description: "Visualize padrões recorrentes (quando autorizado) e apoie seu time com base em temas e contextos reais — tudo com privacidade e embasamento clínico."
+    description: "O prontuário é de uso exclusivo do psicólogo e permanece totalmente confidencial, conforme o Código de Ética da Psicologia."
   },
   {
     icon: ChartSpline,
-    title: "Relatórios gerenciais",
-    description: "Receba análises mensais com métricas organizacionais, sem identificar indivíduos, para tomar decisões baseadas em dados."
+    title: "Relatórios Gerenciais Estratégicos.",
+    description: "Receba análises mensais com métricas organizacionais, que orientam ações do RH de forma inteligente e preventiva, sem expor dados individuais, respeitando totalmente a privacidade dos colaboradores."
   },
   {
     icon: ShieldCheck,
     title: "Sigilo e ética garantidos",
-    description: "Toda a jornada do colaborador é protegida por um sistema seguro e seu atendimento é feito por psicólogos com CRP ativo, com ética, cuidado e sigilo absoluto. Fale com segurança. Aqui, sua privacidade é prioridade."
+    description: "Toda a jornada do colaborador é protegida por um sistema seguro e seu atendimento é feito por psicólogos com CRP ativo, com ética, cuidado e sigilo absoluto."
   }
 ];
 
@@ -84,7 +84,7 @@ const FeaturesWithImage = () => {
                 Vantagens para sua empresa
               </h2>
               <p>
-                Mais do que um benefício, um investimento estratégico em bem-estar corporativo.<br />Com o SYD, sua empresa entrega apoio psicológico real, imediato e acessível — enquanto o RH ganha dados para agir com inteligência, e os colaboradores sentem-se acolhidos de verdade.
+                Mais do que um benefício, é um investimento inteligente em saúde emocional corporativa<br />Com o SYD, sua empresa entrega apoio psicológico real, imediato e acessível — enquanto o RH ganha dados para agir com inteligência, e os colaboradores sentem-se acolhidos de verdade.
               </p>
             </div>
 
@@ -100,6 +100,8 @@ const FeaturesWithImage = () => {
               <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
                 <a
                   href="https://syd-83174.bubbleapps.io/version-test/auth?t=login"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full px-6 py-3.5 text-white text-xl font-semibold"
                 >
                   Desbloquear vantagens
@@ -173,6 +175,8 @@ const FeaturesWithImage = () => {
             <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
               <a
                 href="https://syd-83174.bubbleapps.io/version-test/auth?t=login"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full px-6 py-3.5 text-white text-xl font-semibold"
               >
                 Desbloquear vantagens

@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 const faqs = [
   {
     question: "Como funciona o atendimento por minuto?",
-    answer: "Você só paga pelos minutos efetivamente utilizados durante a consulta. O tempo é contabilizado automaticamente e mostrado de forma clara para você, sem surpresas."
+    answer: "No Syd, você paga apenas pelos minutos que escolher. Você pode contratar atendimentos de 20, 40 ou 60 minutos, seja para um acolhimento imediato (urgência emocional) ou uma consulta previamente agendada com um psicólogo credenciado. Caso queira estender a conversa, é possível adicionar mais minutos com facilidade, sendo cobrado proporcionalmente pelo tempo extra escolhido.” (em amarelo, considerar retirar caso fique uma resposta muito longa)."
   },
   {
     question: "Preciso agendar com antecedência?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "É seguro e sigiloso?",
-    answer: "Sim. Todos os atendimentos seguem o código de ética profissional da psicologia. Seus dados e conversas são protegidos com total sigilo."
+    answer: "Sim. Todos os atendimentos seguem o Código de Ética Profissional da Psicologia. Seus dados e conversas são protegidos com total sigilo."
   },
   {
     question: "Posso acessar pelo celular?",
@@ -25,11 +25,11 @@ const faqs = [
   },
   {
     question: "Preciso pagar alguma mensalidade?",
-    answer: "Não. Você pode usar o SYD de forma avulsa, sem nenhum tipo de fidelidade ou taxa mensal. Só paga quando usar."
+    answer: "Não. Você pode usar o SYD de forma avulsa, sem nenhum tipo de fidelidade ou taxa mensal. Só paga quando usar; se preferir, pode adicionar saldo com antecedência, o que ajuda a ganhar agilidade em momentos de urgência, sem precisar inserir dados de pagamento na hora. É uma forma prática de estar preparado quando mais precisar."
   },
   {
     question: "O que acontece se eu cancelar uma consulta agendada?",
-    answer: "Você pode cancelar sua consulta diretamente pela plataforma, sem burocracia. Se o cancelamento for feito com até 1 hora de antecedência, o valor não é cobrado. Cancelamentos após esse prazo podem gerar cobrança parcial ou total, dependendo do tempo reservado pelo profissional. Sempre informamos as condições antes da confirmação do agendamento."
+    answer: "Você pode cancelar sua consulta diretamente pela plataforma, sem burocracia. Se o cancelamento for feito com até 12 horas de antecedência, o valor não é cobrado. Cancelamentos após esse prazo podem gerar cobrança parcial ou total, dependendo do tempo reservado pelo profissional. Sempre informamos as condições antes da confirmação do agendamento."
   }
 ];
 
@@ -75,7 +75,9 @@ const FAQ = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="flex w-full lg:w-[14rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 text-white text-xl font-[var(--body)] h-auto">
               <a
-                href="https://api.whatsapp.com/send/?phone=5515996945695&text=gostaria%20de%20agendar%20uma%20demonstração"
+                href="https://api.whatsapp.com/send/?phone=5515996945695&text=Tenho+dúvidas%2C+pode+me+ajudar%3F&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full px-6 py-3.5 text-white text-xl font-semibold"
               >
                 Entrar em contato

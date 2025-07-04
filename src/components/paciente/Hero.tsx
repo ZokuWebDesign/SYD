@@ -23,7 +23,7 @@ const Hero = () => {
               </h2>
               <p>
                 Está enfrentando um momento difícil e precisa de ajuda agora? No SYD, você pode iniciar uma vídeo chamada urgente com profissionais qualificados ou agendar sua consulta com poucos cliques.<br />
-                A <span className="text-secondary">saúde emocional não pode esperar</span>, e você também não precisa.
+                <span className="text-secondary font-medium">A sua saúde emocional não pode esperar, e você também não precisa.</span>
               </p>
             </div>
 
@@ -31,6 +31,8 @@ const Hero = () => {
               <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
                 <a
                   href="https://syd-83174.bubbleapps.io/version-test/auth?t=login"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full px-6 py-3.5 text-white text-xl font-semibold"
                 >
                   Comece agora

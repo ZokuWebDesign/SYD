@@ -9,12 +9,14 @@ const CTA = () => {
           Sua empresa cuida da saúde mental dos colaboradores?
         </h2>
         <p className="text-white mb-8 max-w-2xl mx-auto">
-          <span className="text-lg font-medium">Ofereça um benefício que realmente faz a diferença.</span><br />O SYD ajuda empresas a promoverem bem-estar emocional com um atendimento psicológico acessível, imediato e sem complicações. Invista em um time mais saudável, produtivo e engajado — fale com nosso time e leve o SYD para sua empresa.
+          <span className="text-lg font-medium">Ofereça um benefício que realmente faz a diferença.</span><br />O SYD ajuda empresas a promoverem bem-estar emocional com um atendimento psicológico acessível, imediato e sem burocracias. Invista em um time mais saudável, produtivo e engajado. Fale com nosso time.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" className="flex w-full sm:w-[20.25rem] px-6 py-3.5 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
             <a
               href="https://syd-83174.bubbleapps.io/version-test/auth?t=login"
+              target="_blank"
+              rel="noopener noreferrer"
               className=" text-white text-xl font-semibold"
             >
               Quero indicar minha empresa

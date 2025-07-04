@@ -29,7 +29,9 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
                 <a
-                  href="https://api.whatsapp.com/send/?phone=5515996945695&text=gostaria%20de%20agendar%20uma%20demonstração"
+                  href="https://api.whatsapp.com/send/?phone=5515996945695&text=Olá%21+Tenho+interesse%21+Quero+agendar+uma+apresentação+para+minha+empresa%21&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full px-6 py-3.5 text-white text-xl font-semibold"
                 >
                   Fale com nosso time

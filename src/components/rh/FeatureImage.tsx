@@ -16,7 +16,7 @@ const FeatureImage = () => {
             {/* Heading + Text */}
             <div className="flex flex-col items-start gap-2 w-full">
               <h2>Menos crises,<br />mais produtividade</h2>
-              <p>Com o SYD, sua empresa evita afastamentos, queda de performance e rotatividade por problemas emocionais.<br />Ao oferecer suporte psicológico acessível e imediato, você cria um ambiente mais saudável, engajado e sustentável. Cuidar da saúde mental dos colaboradores não é só um diferencial — é uma estratégia inteligente de gestão de pessoas.</p>
+              <p>Com o SYD, sua empresa evita afastamentos, queda de performance e rotatividade por problemas emocionais.<br />Ao oferecer suporte psicológico acessível e imediato, você cria um ambiente mais saudável, engajado e sustentável. Cuidar da saúde mental dos colaboradores não é só um diferencial, é uma estratégia inteligente de gestão de pessoas. Além disso, o Syd contribui para que sua empresa esteja em conformidade com a NR-1, que exige medidas efetivas de prevenção e promoção da saúde no ambiente de trabalho, incluindo a saúde mental.</p>
             </div>
           </div>
           {/* Actions */}
@@ -24,6 +24,8 @@ const FeatureImage = () => {
             <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
               <a
                 href="https://syd-83174.bubbleapps.io/version-test/auth?t=login"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full px-6 py-3.5 text-white text-xl font-semibold"
               >
                 Quero diminuir o turnover

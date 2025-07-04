@@ -5,7 +5,7 @@ import star from "@/assets/icons/star.svg"
 
 const testimonials = [
   {
-    quote: "O SYD me proporcionou autonomia real. Eu defino meus horários, meu valor e ainda conto com um sistema que facilita muito minha rotina. Me sinto respeitada como profissional e acolhida como pessoa.",
+    quote: "O SYD me proporcionou autonomia real. Eu defino meus horários, planos, tipo de atendimento e ainda conto com um sistema que facilita muito minha rotina. Me sinto respeitada como profissional e acolhida como pessoa.",
     name: "Ana Campos",
     crp: "CRP 06/123456",
     image: "https://i.imgur.com/9eli6nb.jpeg"

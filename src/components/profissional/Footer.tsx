@@ -28,7 +28,9 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-2 text-secondary">
                   <MapPin className="w-5 h-5" />
-                  <a href="https://maps.app.goo.gl/ghBRMu5z5WcXG5MSA" className="hover:underline"><p className="text-secondary">Rua Antônio Pérez Hernandez, 500. Parque Campolim - Sorocaba SP.</p></a>
+                  <a href="https://maps.app.goo.gl/ghBRMu5z5WcXG5MSA" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    <p className="text-secondary">Sorocaba-SP.</p>
+                  </a>
                 </div>
               </div>
               <div className="flex flex-col items-start gap-1 w-full">
@@ -37,11 +39,11 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-2 text-secondary">
                   <Phone className="w-5 h-5" />
-                  <a href="https://api.whatsapp.com/send/?phone=5515996945695&text=oi,%20gostaria%20de%20agendar%20uma%20consulta" className="hover:underline"><p className="text-secondary">+55 15 99694-5695</p></a>
+                  <a href="https://api.whatsapp.com/send/?phone=5515996945695&text=Ol%C3%A1%21+Tenho+interesse+em+atender+pelo+Syd+e+gostaria+de+saber+mais.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="hover:underline"><p className="text-secondary">+55 15 99694-5695</p></a>
                 </div>
                 <div className="flex items-center gap-2 text-secondary">
                   <Mail className="w-5 h-5" />
-                  <a href="mailto:suporte@sydapp.com.br" className="hover:underline"><p className="text-secondary">suporte@sydapp.com.br</p></a>
+                  <a href="mailto:suporte@sydapp.com.br" target="_blank" rel="noopener noreferrer" className="hover:underline"><p className="text-secondary">suporte@sydapp.com.br</p></a>
                 </div>
               </div>
               <div className="flex space-x-4">
@@ -51,7 +53,7 @@ const Footer = () => {
                 <a href="" className="hover:opacity-80 transition-opacity">
                   <img src={X} alt="X (Twitter)" className="w-5 h-5" />
                 </a>
-                <a href="https://www.instagram.com/syd.app/" className="hover:opacity-80 transition-opacity">
+                <a href="https://www.instagram.com/syd.app/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <img src={instagram} alt="Instagram" className="w-5 h-5" />
                 </a>
                 <a href="" className="hover:opacity-80 transition-opacity">
@@ -97,9 +99,9 @@ const Footer = () => {
               © 2025 SYD. Todos os direitos reservados.
             </div>
             <div className="flex flex-wrap justify-center gap-2 md:gap-0">
-              <a href="#" className="hover:underline transition-colors p-3">Política de Privacidade</a>
-              <a href="#" className="hover:underline transition-colors p-3">Termos de Uso</a>
-              <a href="#" className="hover:underline transition-colors p-3">Cookies</a>
+              <a href="/politica" className="hover:underline transition-colors p-3">Política de Privacidade</a>
+              <a href="/termos" className="hover:underline transition-colors p-3">Termos de Uso</a>
+              <a href="/cookies" className="hover:underline transition-colors p-3">Cookies</a>
             </div>
           </div>
         </div>

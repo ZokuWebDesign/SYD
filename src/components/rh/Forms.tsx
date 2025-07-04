@@ -13,7 +13,14 @@ const Forms = () => {
     empresa: "",
     email: ""
   });
+  const [emailError, setEmailError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const isPersonalEmail = (email: string) => {
+    const personalDomains = ['gmail.com', 'hotmail.com', 'outlook.com', 'yahoo.com', 'icloud.com'];
+    const domain = email.split('@')[1];
+    return personalDomains.includes(domain?.toLowerCase());
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -21,24 +28,36 @@ const Forms = () => {
       ...prev,
       [name]: value
     }));
+
+    // Limpa o erro quando o usuário começa a digitar novamente
+    if (name === 'email') {
+      setEmailError("");
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Valida o email antes de enviar
+    if (isPersonalEmail(formData.email)) {
+      setEmailError("Por favor, utilize um e-mail corporativo.");
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
       await emailjs.send(
-        'service_7lnuuu9', // Replace with your EmailJS service ID
-        'template_jbf5jfk', // Replace with your EmailJS template ID
+        'service_7lnuuu9',
+        'template_jbf5jfk',
         {
           from_name: formData.name,
           from_cargo: formData.cargo,
           from_empresa: formData.empresa,
           from_email: formData.email,
-          to_name: 'SYD', // Replace with your name or company name
+          to_name: 'SYD',
         },
-        '7xLhsOou1xwr37tb9' // Replace with your EmailJS public key
+        '7xLhsOou1xwr37tb9'
       );
 
       toast.success('Mensagem enviada com sucesso!');
@@ -141,9 +160,12 @@ const Forms = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       placeholder="Digite o seu e-mail"
-                      className="h-12"
+                      className={`h-12 ${emailError ? 'border-red-500' : ''}`}
                       required
                     />
+                    {emailError && (
+                      <p className="text-sm text-red-500">{emailError}</p>
+                    )}
                   </div>
 
                   <Button 
@@ -155,7 +177,7 @@ const Forms = () => {
                   </Button>
 
                   <p className="text-sm text-gray-500">
-                  Ao enviar este formulário, você concorda com nossos <a>Termos de Uso</a> e <a>Política de Privacidade</a>.
+                  Ao enviar este formulário, você concorda com nossos <a href="/termos" target="_blank" rel="noopener noreferrer">Termos de Uso</a> e <a href="/politica" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>.
                   </p>
                 </form>
               </div>

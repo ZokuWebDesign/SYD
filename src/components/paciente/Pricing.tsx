@@ -1,51 +1,55 @@
-import { Check, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import FeatureItem from "./FeatureItem";
 import sun from "@/assets/icons/sun-icon.svg";
 
 const features1 = [
   {
-    text: "Pague apenas pelos minutos utilizados",
+    text: "Acesso a atendimento de urgência 24h",
     iconSvg: sun
   },
   {
-    text: "Acesso a atendimentos de urgência 24h",
+    text: "Atendimento com ou sem agendamento prévio.",
     iconSvg: sun
   },
   {
-    text: "Sem necessidade de agendamento prévio",
+    text: "Liberdade total de uso: você escolhe quando e quanto tempo deseja.",
     iconSvg: sun
   },
   {
-    text: "Sem mensalidade, sem fidelidade",
+    text: "O valor total será calculado com base no tempo escolhido no momento do agendamento. OU (Pague apenas pelos minutos que deseja utilizar)",
     iconSvg: sun
   },
   {
-    text: "Liberdade total de uso, quando quiser",
+    text: "Sem mensalidade, sem fidelidade.",
     iconSvg: sun
   }
 ];
 
 const features2 = [
   {
-    text: "Acesso para todos os colaboradores sem custo direto individual",
+    text: "Acesso imediato e 24h ao suporte emocional",
     iconSvg: sun
   },
   {
-    text: "Relatórios de uso e indicadores de bem-estar organizacional",
+    text: "Modelo de uso sob demanda ou agendamento",
     iconSvg: sun
   },
   {
-    text: "Atendimentos sob demanda ou por agendamento",
+    text: "Suporte personalizado para o RH",
     iconSvg: sun
   },
   {
-    text: "Suporte personalizado para RH e gestão de saúde mental",
+    text: "Sem mensalidade obrigatória ou contratos engessados",
     iconSvg: sun
   },
   {
-    text: "Garantia de sigilo e ética em todas as consultas",
+    text: "Valorização do Employer Branding",
+    iconSvg: sun
+  },
+  {
+    text: "Relatórios de tempo de uso e indicadores de bem-estar organizacional (sem quebra de sigilo)",
     iconSvg: sun
   }
 ];
@@ -59,7 +63,7 @@ const Pricing = () => {
             Planos e Preços
           </p>
           <h2 className="mb-2">
-            Transparência e liberdade para você escolher como cuidar da sua mente.
+            Transparência e liberdade para você escolher como cuidar da sua saúde mental.
           </h2>
           <p>
             No SYD, você decide como e quanto investir no seu bem-estar emocional.
@@ -77,7 +81,7 @@ const Pricing = () => {
             {/* Price Title */}
             <div className="text-start">
               <h4 className="text-xl font-semibold text-[hsl(var(--black))]">Atendimento avulso</h4>
-              <p className="text-base text-[hsl(var(--black))] mt-1">Ideal para quem busca flexibilidade total, sem compromissos.</p>
+              <p className="text-base text-[hsl(var(--black))] mt-1">Ideal para quem busca flexibilidade total, a partir de R$1,99 o minuto.</p>
             </div>
 
             {/* Divider */}
@@ -93,7 +97,7 @@ const Pricing = () => {
 
               {/* Button */}
               <Button className="w-full p-0 bg-secondary hover:bg-secondary/90 rounded-2xl h-auto">
-                <a href="https://syd-83174.bubbleapps.io/version-test/auth?t=login" className="w-full py-3 px-6 text-lg text-center text-white font-medium">
+                <a href="https://syd-83174.bubbleapps.io/version-test/auth?t=login" target="_blank" rel="noopener noreferrer" className="w-full py-3 px-6 text-lg text-center text-white font-medium">
                   Agendar consulta
                 </a>
               </Button>
@@ -119,7 +123,7 @@ const Pricing = () => {
             {/* Price Title */}
             <div className="text-start">
               <h4 className="text-xl font-semibold text-[hsl(var(--black))]">Convênio com empresas</h4>
-              <p className="text-base text-[hsl(var(--black))] mt-1">Cuidado com colaboradores, benefícios para o negócio.</p>
+              <p className="text-base text-[hsl(var(--black))] mt-1">Cuidado com colaboradores, benefícios para os negócios.</p>
             </div>
 
             {/* Divider */}
@@ -136,7 +140,9 @@ const Pricing = () => {
               {/* Button */}
               <Button className="w-full p-0 bg-secondary hover:bg-secondary/90 rounded-2xl h-auto group">
                 <a
-                  href="https://api.whatsapp.com/send/?phone=5515996945695&text=gostaria%20de%20receber%20um%20orçamento"
+                  href="mailto:contact@appsyd.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center w-full py-3 px-6 text-lg text-white font-semibold font-[Lato] w-full"
                 >
                   Entrar em contato

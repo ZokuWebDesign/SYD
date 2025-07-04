@@ -20,7 +20,7 @@ const AppDownload = () => {
           </div>
           {/* Actions */}
           <div className="flex items-start gap-4">
-            <a href="#" aria-label="Download on Google Play" className="group">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Download on Google Play" className="group">
               <img 
                 src={googlePlay} 
                 alt="Baixe na PlayStore" 
@@ -32,7 +32,7 @@ const AppDownload = () => {
                 className="h-12 hidden group-hover:block" 
               />
             </a>
-            <a href="#" aria-label="Download on the App Store" className="group">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" className="group">
               <img 
                 src={appStore} 
                 alt="Baixe na AppStore" 

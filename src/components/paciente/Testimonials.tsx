@@ -23,7 +23,7 @@ const testimonials = [
     image: "https://i.imgur.com/mCLpyQD.jpeg"
   },
   {
-    quote: "Gosto muito da liberdade de pagar por minuto. Sem compromisso, sem pressão, só entro quando realmente preciso. Já usei duas vezes e fui super bem atendido. Recomendo muito!",
+    quote: "Gosto muito da liberdade de pagar por minuto. Sem compromisso, sem pressão, só entro quando realmente preciso. Já usei duas vezes e fui super bem atendida. Recomendo muito!",
     name: "Rafaela Souza",
     /*crp: "",*/
     image: "https://i.imgur.com/R3VWDDC.jpeg"

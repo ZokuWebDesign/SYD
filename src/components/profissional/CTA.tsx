@@ -9,12 +9,14 @@ const CTA = () => {
           Cadastre-se e comece a transformar vidas
         </h2>
         <p className="text-white mb-8 max-w-2xl mx-auto">
-          <span className="text-lg font-medium">Acolher é sua vocação. Facilitar esse encontro é a nossa.</span><br />Junte-se a uma rede de psicólogos que estão fazendo a diferença todos os dias — com autonomia, segurança e suporte real. O SYD é o seu espaço para atender com propósito e viver a psicologia na prática.
+          No SyD, você encontra escuta, apoio e estrutura para estar presente nos momentos em que mais importa.<br/>Aqui, você faz parte de uma rede que respeita sua trajetória e sua escolha de exercer a profissão com liberdade e sentido<br/>Atue com autonomia, segurança, suporte contínuo e retorno justo, em um ambiente que também cuida de quem cuida.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" className="flex w-full sm:w-[20.25rem] px-6 py-3.5 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
             <a
               href="https://syd-83174.bubbleapps.io/version-test/auth?t=login"
+              target="_blank"
+              rel="noopener noreferrer"
               className=" text-white text-xl font-semibold"
             >
               Quero me cadastrar

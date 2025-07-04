@@ -7,8 +7,9 @@ const ComoFunciona = () => {
   return (
     <section id="como-funciona" className="w-full max-w-7xl mx-auto flex flex-col items-center gap-12 py-16 lg:py-28 px-4 lg:px-14">
       <header className="flex flex-col items-center gap-2 w-full lg:w-[48rem] text-center">
-        <h2>Cuidar da sua saúde emocional nunca foi tão simples e rápido.</h2>
-        <p>Com o SYD, você tem acesso a atendimentos psicológicos online, sob demanda ou com hora marcada, diretamente pelo celular ou computador, como preferir, priorizando sempre a praticidade.</p>
+        <h2>Cuidar da sua saúde emocional nunca foi tão simples</h2>
+        <p>Com o SYD, você tem acesso a atendimentos psicológicos online no momento em que mais precisa ou, se preferir, com hora marcada. Sem filas de espera, sem burocracia.<br/>Tudo direto do seu celular ou computador, com praticidade e acolhimento desde o primeiro clique.</p>
+
       </header>
 
       <div className="w-full grid gap-8 md:grid-cols-3">
@@ -53,6 +54,8 @@ const ComoFunciona = () => {
               <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
                 <a
                   href="https://syd-83174.bubbleapps.io/version-test/auth?t=login"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full px-6 py-3.5 text-white text-xl font-semibold"
                 >
                   Comece agora

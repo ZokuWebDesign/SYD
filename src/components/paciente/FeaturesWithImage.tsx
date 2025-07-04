@@ -9,7 +9,7 @@ const features = [
   {
     icon: CircleCheckBig,
     title: "Atendimento por minuto",
-    description: "Pague apenas pelos minutos utilizados, sem desperdício e com total controle do seu tempo e investimento."
+    description: "Pague apenas pelos minutos que utilizará, e tenha total controle do seu tempo e investimento."
   },
   {
     icon: TriangleAlert,
@@ -23,7 +23,7 @@ const features = [
   },
   {
     icon: Banknote,
-    title: "Sem mensalidade obrigatória",
+    title: "Sem mensalidade",
     description: "Use como quiser, quando precisar. Nenhuma taxa fixa."
   },
   {
@@ -84,7 +84,7 @@ const FeaturesWithImage = () => {
                 Por que escolher o SYD?
               </h2>
               <p>
-                Porque sua saúde mental merece <span className="text-secondary font-semibold">praticidade</span>, <span className="text-secondary font-semibold">acolhimento</span> e <span className="text-secondary font-semibold">liberdade</span>.<br />No SYD, você encontra uma forma moderna de cuidar do seu bem-estar emocional. <span className="text-secondary font-semibold">Sem burocracias</span>, com <span className="text-secondary font-semibold">total flexibilidade</span> e <span className="text-secondary font-semibold">profissionais confiáveis</span> sempre à disposição.
+                Porque sua saúde mental merece <span className="text-secondary font-semibold">praticidade</span>, <span className="text-secondary font-semibold">acolhimento</span> e <span className="text-secondary font-semibold">liberdade</span>.<br />No SYD, você encontra uma forma segura de cuidar do seu bem-estar emocional. <span className="text-secondary font-semibold">Sem burocracias</span>, com <span className="text-secondary font-semibold">total flexibilidade</span> e <span className="text-secondary font-semibold">profissionais confiáveis</span> sempre à disposição.
               </p>
             </div>
 
@@ -100,6 +100,8 @@ const FeaturesWithImage = () => {
               <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
                 <a
                   href="https://syd-83174.bubbleapps.io/version-test/auth?t=login"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full px-6 py-3.5 text-white text-xl font-semibold"
                 >
                   Iniciar atendimento
@@ -173,6 +175,8 @@ const FeaturesWithImage = () => {
             <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
               <a
                 href="https://syd-83174.bubbleapps.io/version-test/auth?t=login"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full px-6 py-3.5 text-white text-xl font-semibold"
               >
                 Iniciar atendimento

@@ -7,6 +7,9 @@ import Index from "./pages/Index";
 import Profissional from "./pages/Profissional";
 import RH from "./pages/RH";
 import NotFound from "./pages/NotFound";
+import CookiesPage from "./pages/Cookies";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfUse from "./pages/TermsOfUse";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +22,9 @@ const App = () => (
         <Route path="/" element={<Index />} />
         <Route path="/profissional" element={<Profissional />} />
         <Route path="/rh" element={<RH />} />
+        <Route path="/politica" element={<PrivacyPolicy />} />
+        <Route path="/termos" element={<TermsOfUse />} />
+        <Route path="/cookies" element={<CookiesPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </TooltipProvider>

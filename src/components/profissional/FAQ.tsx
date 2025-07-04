@@ -6,6 +6,15 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 
+const formatAnswer = (text: string) => {
+  return text.split('\n').map((line, i) => (
+    <span key={i}>
+      {line}
+      {i < text.split('\n').length - 1 && <br />}
+    </span>
+  ));
+};
+
 const faqs = [
   {
     question: "Preciso ter CRP ativo para me cadastrar?",
@@ -26,6 +35,14 @@ const faqs = [
   {
     question: "A plataforma oferece suporte técnico e clínico?",
     answer: "Sim. Nossa equipe está disponível para tirar dúvidas, ajudar com o uso da plataforma e oferecer acolhimento e orientação sempre que necessário. Você também pode contar com a comunidade de psicólogos para trocas profissionais."
+  },
+  {
+    question: "Qual o percentual de repasse e em quanto tempo recebo pelos atendimentos?",
+    answer: "O repasse é justo, transparente e feito diretamente para sua conta cadastrada. O percentual varia conforme o plano ativo (mensal ou anual) e os critérios da plataforma, mas sempre visando valorizar o trabalho do psicólogo. Os pagamentos são processados em até 7 dias úteis após a finalização de cada atendimento."
+  },
+  {
+    question: "Como funcionam os planos da plataforma para profissionais?",
+    answer: "Após o período promocional sem custo até janeiro de 2026, o profissional poderá escolher entre dois modelos:\nPlano mensal: R$39,90/mês\nPlano anual: R$399,00/ano (economia de 2 meses)\nAmbos os planos garantem acesso completo à plataforma, participação na comunidade, uso do prontuário com tags inteligentes, relatórios, suporte e muito mais."
   }
 ];
 
@@ -54,7 +71,7 @@ const FAQ = () => {
               </AccordionTrigger>
               <AccordionContent className="flex items-start gap-4 pb-6 w-full">
                 <p className="">
-                  {faq.answer}
+                  {formatAnswer(faq.answer)}
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -71,7 +88,9 @@ const FAQ = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="flex w-full lg:w-[14rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 text-white text-xl font-[var(--body)] h-auto">
               <a
-                href="https://api.whatsapp.com/send/?phone=5515996945695&text=gostaria%20de%20agendar%20uma%20demonstração"
+                href="https://api.whatsapp.com/send/?phone=5515996945695&text=Ol%C3%A1%21+Tenho+interesse+em+atender+pelo+Syd+e+gostaria+de+saber+mais.&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full px-6 py-3.5 text-white text-xl font-semibold"
               >
                 Entrar em contato
