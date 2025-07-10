@@ -28,7 +28,9 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-2 text-secondary">
                   <MapPin className="w-5 h-5" />
-                  <a href="https://maps.app.goo.gl/ghBRMu5z5WcXG5MSA" target="_blank" rel="noopener noreferrer" className="hover:underline"><p className="text-secondary">Rua Antônio Pérez Hernandez, 500. Parque Campolim - Sorocaba SP.</p></a>
+                  <a href="https://maps.app.goo.gl/ghBRMu5z5WcXG5MSA" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    <p className="text-secondary">Sorocaba-SP.</p>
+                  </a>
                 </div>
               </div>
               <div className="flex flex-col items-start gap-1 w-full">
