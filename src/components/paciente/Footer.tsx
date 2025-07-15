@@ -1,10 +1,13 @@
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import logo from "@/assets/logos/logo-footer.svg";
-import linkedIn from "@/assets/icons/linkedin.svg";
 import facebook from "@/assets/icons/facebook.svg";
 import instagram from "@/assets/icons/instagram.svg";
+import tiktok from "@/assets/icons/tiktok.svg";
 import X from "@/assets/icons/X.svg";
+{/*
 import youtube from "@/assets/icons/youtube.svg";
+import linkedIn from "@/assets/icons/linkedin.svg";
+*/}
 
 const Footer = () => {
   return (
@@ -47,21 +50,26 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex space-x-4">
-                <a href="" className="hover:opacity-80 transition-opacity">
+                <a href="https://www.facebook.com/people/Syd-App/61578179043071/" className="hover:opacity-80 transition-opacity">
                   <img src={facebook} alt="Facebook" className="w-5 h-5" />
-                </a>
-                <a href="" className="hover:opacity-80 transition-opacity">
-                  <img src={X} alt="X (Twitter)" className="w-5 h-5" />
                 </a>
                 <a href="https://www.instagram.com/syd.app/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <img src={instagram} alt="Instagram" className="w-5 h-5" />
                 </a>
+                <a href="https://www.tiktok.com/@syd.app8" className="hover:opacity-80 transition-opacity">
+                  <img src={tiktok} alt="TikTok" className="w-5 h-5" />
+                </a>
+                <a href="https://x.com/syd_app" className="hover:opacity-80 transition-opacity">
+                  <img src={X} alt="X (Twitter)" className="w-5 h-5" />
+                </a>
+                {/*
                 <a href="" className="hover:opacity-80 transition-opacity">
                   <img src={linkedIn} alt="LinkedIn" className="w-5 h-5" />
                 </a>
                 <a href="" className="hover:opacity-80 transition-opacity">
                   <img src={youtube} alt="YouTube" className="w-5 h-5" />
                 </a>
+                */}
               </div>
             </div>
 
