@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import emailjs from '@emailjs/browser';
 import { toast } from "sonner";
 
 const Forms = () => {
@@ -28,19 +27,15 @@ const Forms = () => {
     setIsSubmitting(true);
 
     try {
-      await emailjs.send(
-        'service_7lnuuu9', // Replace with your EmailJS service ID
-        'template_jbf5jfk', // Replace with your EmailJS template ID
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          phone: formData.phone,
-          message: formData.message,
-          to_name: 'SYD', // Replace with your name or company name
-        },
-        '7xLhsOou1xwr37tb9' // Replace with your EmailJS public key
-      );
+      const API_URL = import.meta.env.VITE_API_URL || 'https://api.sydapp.com.br';
+      const res = await fetch(`${API_URL}/api/send`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
 
+      if (!res.ok) throw new Error('Falha no envio');
+      
       toast.success('Mensagem enviada com sucesso!');
       setFormData({
         name: "",
