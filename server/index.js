@@ -17,6 +17,9 @@ dotenv.config({
 
 const app = express();
 
+// Configurar trust proxy para o Render
+app.set('trust proxy', 1);
+
 // Segurança
 app.use(helmet({
   contentSecurityPolicy: {
@@ -51,7 +54,11 @@ app.use(monitoringMiddleware); // Limita o tamanho do payload
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutos
   max: 5, // Limite de 5 requisições por IP
-  message: 'Muitas requisições deste IP, por favor tente novamente em 15 minutos'
+  message: 'Muitas requisições deste IP, por favor tente novamente em 15 minutos',
+  // Configuração para trabalhar corretamente com o proxy do Render
+  trustProxy: true,
+  standardHeaders: true,
+  legacyHeaders: false
 });
 
 // CORS configuration
