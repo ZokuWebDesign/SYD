@@ -4,6 +4,11 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
+import compression from 'compression';
+import morgan from 'morgan';
+import { fileURLToPath } from 'url';
+import path from 'path';
+import { monitoringMiddleware } from './utils/monitoring.js';
 
 // Carrega variáveis de ambiente baseado no ambiente
 dotenv.config({
@@ -13,8 +18,34 @@ dotenv.config({
 const app = express();
 
 // Segurança
-app.use(helmet());
-app.use(express.json({ limit: '10kb' })); // Limita o tamanho do payload
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      styleSrc: ["'self'", "'unsafe-inline'"],
+      scriptSrc: ["'self'", "'unsafe-inline'"],
+      imgSrc: ["'self'", "data:", "https:"],
+    },
+  },
+  crossOriginEmbedderPolicy: false,
+}));
+
+// Compressão
+app.use(compression());
+
+// Logs estruturados
+morgan.token('body', (req) => JSON.stringify(req.body));
+const logFormat = process.env.NODE_ENV === 'production'
+  ? ':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"'
+  : 'dev';
+app.use(morgan(logFormat, {
+  skip: (req) => process.env.NODE_ENV === 'production' && req.method === 'OPTIONS',
+}));
+
+app.use(express.json({ limit: '10kb' }));
+
+// Adiciona middleware de monitoramento
+app.use(monitoringMiddleware); // Limita o tamanho do payload
 
 // Rate limiting
 const limiter = rateLimit({
@@ -26,10 +57,12 @@ const limiter = rateLimit({
 // CORS configuration
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://sydapp.com.br', 'https://www.sydapp.com.br', 'https://syd.app.br', 'https://www.syd.app.br']
+    ? ['https://sydapp.com.br', 'https://www.sydapp.com.br']
     : 'http://localhost:5173',
   methods: ['POST'],
-  optionsSuccessStatus: 204
+  optionsSuccessStatus: 204,
+  credentials: true,
+  maxAge: 86400, // Cache preflight request for 24 hours
 };
 
 app.use(cors(corsOptions));
@@ -56,7 +89,44 @@ transporter.verify(function(error, success) {
   }
 });
 
-app.post('/api/send', async (req, res) => {
+// Middleware de erro
+const errorHandler = (err, req, res, next) => {
+  console.error('Error:', {
+    message: err.message,
+    stack: process.env.NODE_ENV === 'development' ? err.stack : undefined,
+    timestamp: new Date().toISOString(),
+    path: req.path,
+    method: req.method,
+    ip: req.ip,
+  });
+
+  res.status(err.status || 500).json({
+    error: process.env.NODE_ENV === 'production' 
+      ? 'Erro interno do servidor' 
+      : err.message
+  });
+};
+
+// Middleware para validar o corpo da requisição
+const validateEmailRequest = (req, res, next) => {
+  const { name, email, phone, message } = req.body;
+  
+  if (!name || !email || !message) {
+    return res.status(400).json({ 
+      error: 'Campos obrigatórios faltando' 
+    });
+  }
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return res.status(400).json({ 
+      error: 'Email inválido' 
+    });
+  }
+
+  next();
+};
+
+app.post('/api/send', validateEmailRequest, async (req, res) => {
   try {
     const { name, email, phone, message } = req.body;
 
@@ -106,6 +176,26 @@ app.post('/api/send', async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.json({ 
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime()
+  });
+});
+
+// Error handling middleware deve ser o último
+app.use(errorHandler);
+
+const server = app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT} in ${process.env.NODE_ENV} mode`);
+});
+
+// Graceful shutdown
+process.on('SIGTERM', () => {
+  console.log('SIGTERM received. Shutting down gracefully...');
+  server.close(() => {
+    console.log('Process terminated');
+  });
 });

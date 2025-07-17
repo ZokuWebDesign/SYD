@@ -2,7 +2,7 @@ services:
   - type: web
     name: syd-api
     env: node
-    region: brazil # ou escolha outra região mais próxima
+    region: virginia
     buildCommand: cd server && npm install
     startCommand: cd server && npm start
     envVars:

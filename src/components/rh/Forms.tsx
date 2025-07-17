@@ -47,18 +47,12 @@ const Forms = () => {
     setIsSubmitting(true);
 
     try {
-      await emailjs.send(
-        'service_7lnuuu9',
-        'template_jbf5jfk',
-        {
-          from_name: formData.name,
-          from_cargo: formData.cargo,
-          from_empresa: formData.empresa,
-          from_email: formData.email,
-          to_name: 'SYD',
-        },
-        '7xLhsOou1xwr37tb9'
-      );
+      const API_URL = import.meta.env.VITE_API_URL || 'https://api.sydapp.com.br';
+      const res = await fetch(`${API_URL}/api/send`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
 
       toast.success('Mensagem enviada com sucesso!');
       setFormData({
