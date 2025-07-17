@@ -12,9 +12,7 @@ dist
 dist-ssr
 dist.zip
 *.local
-.env.production
-server/.env.production
-server/.env
+*.production
 
 # Editor directories and files
 .vscode/*
