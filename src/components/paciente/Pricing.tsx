@@ -97,7 +97,7 @@ const Pricing = () => {
 
               {/* Button */}
               <Button className="w-full p-0 bg-secondary hover:bg-secondary/90 rounded-2xl h-auto">
-                <a href="https://syd-83174.bubbleapps.io/auth?t=login" target="_blank" rel="noopener noreferrer" className="w-full py-3 px-6 text-lg text-center text-white font-medium">
+                <a href="https://syd-83174.bubbleapps.io/auth?t=cadastro&p=Profissional" target="_blank" rel="noopener noreferrer" className="w-full py-3 px-6 text-lg text-center text-white font-medium">
                   Agendar consulta
                 </a>
               </Button>

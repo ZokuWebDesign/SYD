@@ -36,7 +36,7 @@ const Header = () => {
             */}
             <Button className="rounded-2xl w-[224px] p-0 border border-white bg-secondary hover:bg-secondary/90 h-auto">
               <a
-                href="https://syd-83174.bubbleapps.io/auth?t=login"
+                href="https://syd-83174.bubbleapps.io/auth?t=cadastro&p=Profissional"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-full py-3 px-5 gap-1.5 text-lg text-white font-semibold"
@@ -74,7 +74,7 @@ const Header = () => {
                 */}
                 <Button className="py-3 gap-1.5 border border-white bg-secondary hover:bg-secondary/90 text-white font-semibold h-auto">
                   <a 
-                    href="https://syd-83174.bubbleapps.io/auth?t=login"
+                    href="https://syd-83174.bubbleapps.io/auth?t=cadastro&p=Profissional"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center "
