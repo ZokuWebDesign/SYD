@@ -78,7 +78,7 @@ const Header = () => {
                 */}
                 <Button className="py-3 gap-1.5 border border-white bg-secondary hover:bg-secondary/90 text-white font-semibold h-auto">
                   <a 
-                    href="https://syd-83174.bubbleapps.io/auth?t=cadastro&p=Paciente"
+                    href="https://syd-83174.bubbleapps.io/auth?t=login&p=Paciente"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center "
