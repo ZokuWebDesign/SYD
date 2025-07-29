@@ -2,6 +2,7 @@ import appStore from "@/assets/vectors/app-store.svg";
 import appStoreh from "@/assets/vectors/app-store-hover.svg";
 import googlePlay from "@/assets/vectors/google-play.svg";
 import googlePlayh from "@/assets/vectors/google-play-hover.svg";
+import { STORE_LINKS } from "@/constants/links";
 
 const AppDownload = () => {
   return (
@@ -20,7 +21,7 @@ const AppDownload = () => {
           </div>
           {/* Actions */}
           <div className="flex items-start gap-4">
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Download on Google Play" className="group">
+            <a href={STORE_LINKS.GOOGLE_PLAY} target="_blank" rel="noopener noreferrer" aria-label="Download on Google Play" className="group">
               <img 
                 src={googlePlay} 
                 alt="Baixe na PlayStore" 
@@ -32,7 +33,7 @@ const AppDownload = () => {
                 className="h-12 hidden group-hover:block" 
               />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" className="group">
+            <a href={STORE_LINKS.APP_STORE} target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" className="group">
               <img 
                 src={appStore} 
                 alt="Baixe na AppStore" 

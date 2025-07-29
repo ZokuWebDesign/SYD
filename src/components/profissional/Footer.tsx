@@ -8,6 +8,7 @@ import X from "@/assets/icons/X.svg";
 import youtube from "@/assets/icons/youtube.svg";
 import linkedIn from "@/assets/icons/linkedin.svg";
 */}
+import { WHATSAPP_LINKS, SOCIAL_LINKS, LEGAL_LINKS } from "@/constants/links";
 
 const Footer = () => {
   return (
@@ -31,7 +32,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-2 text-secondary">
                   <MapPin className="w-5 h-5" />
-                  <a href="https://maps.app.goo.gl/ghBRMu5z5WcXG5MSA" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  <a href={SOCIAL_LINKS.LOCAL} target="_blank" rel="noopener noreferrer" className="hover:underline">
                     <p className="text-secondary">Sorocaba-SP.</p>
                   </a>
                 </div>
@@ -42,31 +43,31 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-2 text-secondary">
                   <Phone className="w-5 h-5" />
-                  <a href="https://api.whatsapp.com/send/?phone=5515996945695&text=Ol%C3%A1%21+Tenho+interesse+em+atender+pelo+Syd+e+gostaria+de+saber+mais.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="hover:underline"><p className="text-secondary">+55 15 99694-5695</p></a>
+                  <a href={WHATSAPP_LINKS.PROFESSIONAL.CONTACT} target="_blank" rel="noopener noreferrer" className="hover:underline"><p className="text-secondary">+55 15 99694-5695</p></a>
                 </div>
                 <div className="flex items-center gap-2 text-secondary">
                   <Mail className="w-5 h-5" />
-                  <a href="mailto:suporte@sydapp.com.br" target="_blank" rel="noopener noreferrer" className="hover:underline"><p className="text-secondary">suporte@sydapp.com.br</p></a>
+                  <a href={SOCIAL_LINKS.MAIL} target="_blank" rel="noopener noreferrer" className="hover:underline"><p className="text-secondary">suporte@sydapp.com.br</p></a>
                 </div>
               </div>
               <div className="flex space-x-4">
-                <a href="https://www.facebook.com/people/Syd-App/61578179043071/" className="hover:opacity-80 transition-opacity">
+                <a href={SOCIAL_LINKS.FACEBOOK} className="hover:opacity-80 transition-opacity">
                   <img src={facebook} alt="Facebook" className="w-5 h-5" />
                 </a>
-                <a href="https://www.instagram.com/syd.app/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                <a href={SOCIAL_LINKS.INSTAGRAM} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <img src={instagram} alt="Instagram" className="w-5 h-5" />
                 </a>
-                <a href="https://www.tiktok.com/@syd.app8" className="hover:opacity-80 transition-opacity">
+                <a href={SOCIAL_LINKS.TIKTOK} className="hover:opacity-80 transition-opacity">
                   <img src={tiktok} alt="TikTok" className="w-5 h-5" />
                 </a>
-                <a href="https://x.com/syd_app" className="hover:opacity-80 transition-opacity">
+                <a href={SOCIAL_LINKS.X} className="hover:opacity-80 transition-opacity">
                   <img src={X} alt="X (Twitter)" className="w-5 h-5" />
                 </a>
                 {/*
-                <a href="" className="hover:opacity-80 transition-opacity">
+                <a href={SOCIAL_LINKS.LINKEDIN} className="hover:opacity-80 transition-opacity">
                   <img src={linkedIn} alt="LinkedIn" className="w-5 h-5" />
                 </a>
-                <a href="" className="hover:opacity-80 transition-opacity">
+                <a href={SOCIAL_LINKS.YOUTUBE} className="hover:opacity-80 transition-opacity">
                   <img src={youtube} alt="YouTube" className="w-5 h-5" />
                 </a>
                 */}
@@ -107,9 +108,9 @@ const Footer = () => {
               © 2025 SYD. Todos os direitos reservados.
             </div>
             <div className="flex flex-wrap justify-center gap-2 md:gap-0">
-              <a href="/politica" className="hover:underline transition-colors p-3">Política de Privacidade</a>
-              <a href="/termos" className="hover:underline transition-colors p-3">Termos de Uso</a>
-              <a href="/cookies" className="hover:underline transition-colors p-3">Cookies</a>
+              <a href={LEGAL_LINKS.PRIVACY_POLICY} className="hover:underline transition-colors p-3">Política de Privacidade</a>
+              <a href={LEGAL_LINKS.TERMS_OF_USE} className="hover:underline transition-colors p-3">Termos de Uso</a>
+              <a href={LEGAL_LINKS.COOKIES_POLICY} className="hover:underline transition-colors p-3">Cookies</a>
             </div>
           </div>
         </div>

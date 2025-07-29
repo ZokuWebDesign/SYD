@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { AUTH_LINKS } from "@/constants/links";
 
 const FeatureImageOne = () => {
   return (
@@ -23,7 +24,7 @@ const FeatureImageOne = () => {
           <div className="flex flex-col sm:flex-row w-full gap-4">
             <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
               <a
-                href="https://syd-83174.bubbleapps.io/auth?t=cadastro&p=Profissional"
+                href={AUTH_LINKS.PROFESSIONAL.SIGNUP}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full px-6 py-3.5 text-white text-xl font-semibold"

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X, Calendar, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logos/logo-full.svg";
+import { AUTH_LINKS } from "@/constants/links";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +39,7 @@ const Header = () => {
             */}
             <Button className="rounded-2xl w-[224px] p-0 border border-white bg-secondary hover:bg-secondary/90 h-auto">
               <a
-                href="https://syd-83174.bubbleapps.io/auth?t=cadastro&p=Paciente"
+                href={AUTH_LINKS.PATIENT.LOGIN}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-full py-3 px-5 gap-1.5 text-lg text-white font-semibold"
@@ -78,7 +79,7 @@ const Header = () => {
                 */}
                 <Button className="py-3 gap-1.5 border border-white bg-secondary hover:bg-secondary/90 text-white font-semibold h-auto">
                   <a 
-                    href="https://syd-83174.bubbleapps.io/auth?t=login&p=Paciente"
+                    href={AUTH_LINKS.PATIENT.LOGIN}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center "

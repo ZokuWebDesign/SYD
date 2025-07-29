@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { WHATSAPP_LINKS } from "@/constants/links";
 
 const faqs = [
   {
@@ -75,7 +76,7 @@ const FAQ = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="flex w-full lg:w-[14rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 text-white text-xl font-[var(--body)] h-auto">
               <a
-                href="https://api.whatsapp.com/send/?phone=5515996945695&text=Tenho+dúvidas%2C+pode+me+ajudar%3F&type=phone_number&app_absent=0"
+                href={WHATSAPP_LINKS.PATIENT.FAQ}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full px-6 py-3.5 text-white text-xl font-semibold"

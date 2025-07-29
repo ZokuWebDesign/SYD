@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { SOCIAL_LINKS } from "@/constants/links";
 
 const TermsOfUse = () => {
   return (
@@ -200,7 +201,7 @@ const TermsOfUse = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">5. CONTATO E DÚVIDAS</h2>
             <ul className="list-disc list-inside space-y-2  ml-4">
-              <li>E-mail: <a href="mailto:suporte@sydapp.com.br" className="font-semibold">suporte@sydapp.com.br</a></li>
+              <li>E-mail: <a href={SOCIAL_LINKS.MAIL} className="font-semibold">suporte@sydapp.com.br</a></li>
               <li>Canal de atendimento disponível no aplicativo</li>
             </ul>
           </section>

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import steps1 from "@/assets/vectors/step1.svg";
 import steps2 from "@/assets/vectors/step2.svg";
 import steps3 from "@/assets/vectors/step3.svg";
+import { AUTH_LINKS } from "@/constants/links";
 
 const ComoFunciona = () => {
   return (
@@ -53,7 +54,7 @@ const ComoFunciona = () => {
       <div className="flex flex-col sm:flex-row justify-center w-full gap-4">
               <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
                 <a
-                  href="https://syd-83174.bubbleapps.io/auth?t=cadastro&p=Paciente"
+                  href={AUTH_LINKS.PATIENT.SIGNUP}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full px-6 py-3.5 text-white text-xl font-semibold"

@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
+import { LEGAL_LINKS } from "@/constants/links";
 
 const Forms = () => {
   const [formData, setFormData] = useState({
@@ -133,7 +134,7 @@ const Forms = () => {
                   </Button>
 
                   <p className="text-sm text-gray-500">
-                  Ao enviar este formulário, você concorda com nossos <a href="/termos" target="_blank" rel="noopener noreferrer" className="hover:text-secondary hover:underline">Termos de Uso</a> e <a href="/politica" target="_blank" rel="noopener noreferrer" className="hover:text-secondary hover:underline">Política de Privacidade</a>.
+                  Ao enviar este formulário, você concorda com nossos <a href={LEGAL_LINKS.TERMS_OF_USE} target="_blank" rel="noopener noreferrer" className="hover:text-secondary hover:underline">Termos de Uso</a> e <a href={LEGAL_LINKS.PRIVACY_POLICY} target="_blank" rel="noopener noreferrer" className="hover:text-secondary hover:underline">Política de Privacidade</a>.
                   </p>
                 </form>
               </div>

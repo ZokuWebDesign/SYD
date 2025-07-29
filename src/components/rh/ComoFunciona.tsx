@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import steps1 from "@/assets/vectors/step1.svg";
 import steps2 from "@/assets/vectors/step2.svg";
 import steps3 from "@/assets/vectors/step3.svg";
+import { WHATSAPP_LINKS } from "@/constants/links";
 
 const ComoFunciona = () => {
   return (
@@ -52,7 +53,7 @@ const ComoFunciona = () => {
       <div className="flex flex-col sm:flex-row justify-center w-full gap-4">
               <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
                 <a
-                  href="https://api.whatsapp.com/send/?phone=5515996945695&text=gostaria%20de%20agendar%20uma%20demonstração&type=phone_number&app_absent=0"
+                  href={WHATSAPP_LINKS.RH.PITCH}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full px-6 py-3.5 text-white text-xl font-semibold"

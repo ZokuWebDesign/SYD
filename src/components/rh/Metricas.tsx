@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import FeatureItem from "./FeatureItem";
 import sun from "@/assets/icons/sun-icon.svg";
+import { WHATSAPP_LINKS } from "@/constants/links";
 
 const features = [
   {
@@ -158,7 +159,7 @@ const Metricas = () => {
       <div className="flex flex-col sm:flex-row w-full gap-4">
               <Button size="lg" className="flex w-full sm:w-[20.25rem] p-0 justify-center items-center rounded-2xl border border-white bg-secondary hover:bg-secondary/90 h-auto">
                 <a
-                  href="https://api.whatsapp.com/send/?phone=5515996945695&text=Olá%21+Tenho+interesse%21+Quero+agendar+uma+apresentação+para+minha+empresa%21&type=phone_number&app_absent=0"
+                  href={WHATSAPP_LINKS.RH.PITCH}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full px-6 py-3.5 text-white text-xl font-semibold"

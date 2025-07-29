@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { LEGAL_LINKS, SOCIAL_LINKS } from "@/constants/links";
 
 const TermsOfUse = () => {
   return (
@@ -122,7 +123,7 @@ const TermsOfUse = () => {
             <p className="text-secondary mb-4">
               Respeitamos rigorosamente a confidencialidade das informações médicas e seguimos todas as 
               regulamentações aplicáveis à privacidade na área da saúde. Para mais detalhes, consulte 
-              nossa <a href="/politica" className="text-primary hover:underline">Política de Privacidade</a>.
+              nossa <a href={LEGAL_LINKS.PRIVACY_POLICY} className="text-primary hover:underline">Política de Privacidade</a>.
             </p>
           </section>
 
@@ -157,8 +158,8 @@ const TermsOfUse = () => {
               Para questões relacionadas a estes termos, entre em contato conosco:
             </p>
             <ul className="list-none space-y-2 text-secondary">
-              <li>Email: <a href="mailto:suporte@sydapp.com.br" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">suporte@sydapp.com.br</a></li>
-              <li>Telefone: <a href="tel:+5515996945695" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">+55 15 99694-5695</a></li>
+              <li>Email: <a href={SOCIAL_LINKS.MAIL} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">suporte@sydapp.com.br</a></li>
+              <li>Telefone: <a href={SOCIAL_LINKS.NUMBER} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">+55 15 99694-5695</a></li>
               <li>Endereço: Rua Antônio Pérez Hernandez, 500. Parque Campolim - Sorocaba SP.</li>
             </ul>
           </section>

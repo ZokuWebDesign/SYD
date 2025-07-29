@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { SOCIAL_LINKS } from "@/constants/links";
 
 const CookiesPage = () => {
   return (
@@ -88,7 +89,7 @@ const CookiesPage = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">Contato</h2>
             <p className="text-secondary mb-4">
-              Se você tiver alguma dúvida sobre nossa política de cookies, entre em contato conosco através do email: <a href="mailto:suporte@sydapp.com.br" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">suporte@sydapp.com.br</a>
+              Se você tiver alguma dúvida sobre nossa política de cookies, entre em contato conosco através do email: <a href={SOCIAL_LINKS.MAIL} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">suporte@sydapp.com.br</a>
             </p>
           </section>
         </div>

@@ -37,7 +37,7 @@ const Header = () => {
             */}
             <Button className="rounded-2xl w-[256px] p-0 border border-white bg-secondary hover:bg-secondary/90 h-auto">
               <a
-                href="https://api.whatsapp.com/send/?phone=5515996945695&text=Olá%21+Tenho+interesse%21+Quero+agendar+uma+apresentação+para+minha+empresa%21&type=phone_number&app_absent=0"
+                href={WHATSAPP_LINKS.RH.PITCH}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-full py-3 px-5 gap-1.5 text-lg text-white font-semibold"
@@ -76,7 +76,7 @@ const Header = () => {
                 */}
                 <Button className="py-3 gap-1.5 border border-white bg-secondary hover:bg-secondary/90 text-white font-semibold h-auto">
                   <a 
-                    href="https://api.whatsapp.com/send/?phone=5515996945695&text=Olá%21+Tenho+interesse%21+Quero+agendar+uma+apresentação+para+minha+empresa%21&type=phone_number&app_absent=0"
+                    href={WHATSAPP_LINKS.RH.PITCH}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center "

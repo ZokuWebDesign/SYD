@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import FeatureItem from "./FeatureItem";
 import sun from "@/assets/icons/sun-icon.svg";
+import { SOCIAL_LINKS, AUTH_LINKS } from "@/constants/links";
 
 const features1 = [
   {
@@ -97,7 +98,7 @@ const Pricing = () => {
 
               {/* Button */}
               <Button className="w-full p-0 bg-secondary hover:bg-secondary/90 rounded-2xl h-auto">
-                <a href="https://syd-83174.bubbleapps.io/auth?t=cadastro&p=Profissional" target="_blank" rel="noopener noreferrer" className="w-full py-3 px-6 text-lg text-center text-white font-medium">
+                <a href={AUTH_LINKS.PROFESSIONAL.SIGNUP} target="_blank" rel="noopener noreferrer" className="w-full py-3 px-6 text-lg text-center text-white font-medium">
                   Agendar consulta
                 </a>
               </Button>
@@ -140,7 +141,7 @@ const Pricing = () => {
               {/* Button */}
               <Button className="w-full p-0 bg-secondary hover:bg-secondary/90 rounded-2xl h-auto group">
                 <a
-                  href="mailto:contact@appsyd.com"
+                  href={SOCIAL_LINKS.MAIL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-full py-3 px-6 text-lg text-white font-semibold font-[Lato] w-full"
