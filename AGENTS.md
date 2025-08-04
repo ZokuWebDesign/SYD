@@ -3,3 +3,4 @@ Welcome to the SYD repository. This file contains the main points for new contri
 ## Repository overview
 
 - **Source code**: `src/` contains the implementation.
+- **Tests**: `npm run dev` for testing.
