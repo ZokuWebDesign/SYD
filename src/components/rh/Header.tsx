@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X, Calendar, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logos/logo-full.svg";
+import { WHATSAPP_LINKS } from "@/constants/links";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
