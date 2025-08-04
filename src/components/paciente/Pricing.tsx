@@ -98,7 +98,12 @@ const Pricing = () => {
 
               {/* Button */}
               <Button className="w-full p-0 bg-secondary hover:bg-secondary/90 rounded-2xl h-auto">
-                <a href={AUTH_LINKS.PROFESSIONAL.SIGNUP} target="_blank" rel="noopener noreferrer" className="w-full py-3 px-6 text-lg text-center text-white font-medium">
+                <a
+                  href={AUTH_LINKS.PATIENT.SIGNUP}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3 px-6 text-lg text-center text-white font-medium"
+                >
                   Agendar consulta
                 </a>
               </Button>
