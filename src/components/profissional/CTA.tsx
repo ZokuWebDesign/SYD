@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { AUTH_LINKS } from "@/constants/links";
 
 const CTA = () => {
   return (
