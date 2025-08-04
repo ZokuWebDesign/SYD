@@ -5,7 +5,7 @@ import instagram from "@/assets/icons/instagram.svg";
 import tiktok from "@/assets/icons/tiktok.svg";
 import X from "@/assets/icons/X.svg";
 import { Legend } from "recharts";
-import { LEGAL_LINKS, SOCIAL_LINKS, WHATSAPP_LINKS } from "@/constants/links";
+import { LEGAL_LINKS, PAGE_LINKS, SOCIAL_LINKS, WHATSAPP_LINKS } from "@/constants/links";
 {/*
 import youtube from "@/assets/icons/youtube.svg";
 import linkedIn from "@/assets/icons/linkedin.svg";
@@ -93,8 +93,8 @@ const Footer = () => {
               <div className="w-full max-w-40">
                 <h6 className="text-lg font-semibold text-[hsl(var(--black))] pb-6">Relacionado</h6>
                 <ul className="text-secondary">
-                  <li><a href="/" className="block py-2 hover:underline hover:text-secondary/90 transition-colors">Para pacientes</a></li>
-                  <li><a href="/profissional" className="block py-2 hover:underline hover:text-secondary/90 transition-colors">Para profissionais</a></li>
+                  <li><a href={PAGE_LINKS.PATIENT} className="block py-2 hover:underline hover:text-secondary/90 transition-colors">Para pacientes</a></li>
+                  <li><a href={PAGE_LINKS.PROFESSIONAL} className="block py-2 hover:underline hover:text-secondary/90 transition-colors">Para profissionais</a></li>
                 </ul>
               </div>
             </div>

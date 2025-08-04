@@ -55,6 +55,13 @@ export const STORE_LINKS = {
   APP_STORE: 'https://apps.apple.com/app/syd/id123456789'
 } as const;
 
+// Page Links
+export const PAGE_LINKS = {
+  PATIENT: '/',
+  PROFESSIONAL: '/profissional',
+  RH: '/rh'
+} as const;
+
 // Legal Links
 export const LEGAL_LINKS = {
   PRIVACY_POLICY: '/politica',

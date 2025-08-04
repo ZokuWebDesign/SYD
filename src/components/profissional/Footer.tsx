@@ -8,7 +8,7 @@ import X from "@/assets/icons/X.svg";
 import youtube from "@/assets/icons/youtube.svg";
 import linkedIn from "@/assets/icons/linkedin.svg";
 */}
-import { WHATSAPP_LINKS, SOCIAL_LINKS, LEGAL_LINKS } from "@/constants/links";
+import { WHATSAPP_LINKS, SOCIAL_LINKS, LEGAL_LINKS, PAGE_LINKS } from "@/constants/links";
 
 const Footer = () => {
   return (
@@ -91,8 +91,8 @@ const Footer = () => {
               <div className="w-full max-w-40">
                 <h6 className="text-lg font-semibold text-[hsl(var(--black))] pb-6">Relacionado</h6>
                 <ul className="text-secondary">
-                  <li><a href="/" className="block py-2 hover:underline hover:text-secondary/90 transition-colors">Para pacientes</a></li>
-                  <li><a href="/rh" className="block py-2 hover:underline hover:text-secondary/90 transition-colors">Para empresas</a></li>
+                  <li><a href={PAGE_LINKS.PATIENT} className="block py-2 hover:underline hover:text-secondary/90 transition-colors">Para pacientes</a></li>
+                  <li><a href={PAGE_LINKS.RH} className="block py-2 hover:underline hover:text-secondary/90 transition-colors">Para empresas</a></li>
                 </ul>
               </div>
             </div>
